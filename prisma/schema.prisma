@@ -1,0 +1,21 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("POSTGRES_URL")
+}
+
+model users_example {
+    login           String  @id
+    pswd            String  @db.VarChar(255)
+    name            String? @db.VarChar(64)
+    email           String? @db.VarChar(64)
+    active          String? @db.VarChar(1)
+    activation_code String? @db.VarChar(32)
+    priv_admin      String? @db.VarChar(1)
+    mfa             String? @db.VarChar(255)
+    picture         Bytes?
+    employee_code   String? @db.VarChar(255)
+}
