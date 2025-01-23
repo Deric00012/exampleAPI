@@ -4,8 +4,8 @@ import { prisma } from "../../data/postgres";
 export class EjemploApiController {
     public async getAll(req: Request, res: Response): Promise<void> {
         const example = await prisma.$queryRaw<any>`
-        select *
-        from sec_users
+        select nombre
+        from sync_log
         limit 10;
         `;
         res.send(example);
