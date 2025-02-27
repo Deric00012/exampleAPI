@@ -10,7 +10,7 @@ export class AppRoutes {
         const router = Router();
         const path = require('path')
 
-        // rutas de apis 
+        // rutas de apis
         router.use('/api', EjemploApiRoutes.routes); //Ejemplo de creacion de una API
 
         return router;

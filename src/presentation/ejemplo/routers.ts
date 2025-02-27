@@ -5,7 +5,7 @@ export class EjemploApiRoutes {
     static get routes(): Router {
         const router = Router();
         const ejemploApiController = new EjemploApiController();
-        router.get('/ejemplo', ejemploApiController.getAll);
+        router.post('/ejemplo', ejemploApiController.getAll);
 
         return router;
     }

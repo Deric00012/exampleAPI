@@ -65,7 +65,7 @@ export class Server {
 
     // });
 
-    this.app.listen(this.port,'10.111.21.74', () => {
+    this.app.listen(this.port,'10.111.54.64', () => {
       console.log(`Server running on port ${ this.port }`);
 
     });

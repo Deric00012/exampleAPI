@@ -16,6 +16,7 @@ function main() {
     port: envs.PORT,
     host: envs.HOST,
     public_path: envs.PUBLIC_PATH,
+    
     routes: AppRoutes.routes,
     
   });
